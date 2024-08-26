@@ -1,5 +1,5 @@
 VAULT ?= ~/code/tmp/obsidian-plugin-testing
-PROJECT = guid-front-matter
+PROJECT = uuid-front-matter
 TARGET = dist/main.js
 PROJDIR = $(VAULT)/.obsidian/plugins/$(PROJECT)
 
