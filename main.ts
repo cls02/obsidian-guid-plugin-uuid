@@ -1,12 +1,13 @@
 import { App, Plugin, TFile } from "obsidian";
 import { ulid } from "ulid";
+import { v4 as uuidv4 } from "uuid";
 
 function addID(app: App): (f: TFile) => Promise<void> {
     return async function (f: TFile): Promise<void> {
         const key = "id";
         if (!app.metadataCache.getFileCache(f)?.frontmatter?.[key]) {
             await app.fileManager.processFrontMatter(f, (data) => {
-                data[key] = ulid();
+                data[key] = uuidv4();
             });
         }
     };
