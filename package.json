@@ -1,14 +1,14 @@
 {
-    "name": "guid-front-matter",
-    "version": "1.2.0",
-    "description": "Add a globally unique ID to every markdown document's front matter",
+    "name": "uuid-front-matter",
+    "version": "1.0.0",
+    "description": "Add a UUID to every markdown document's front matter",
     "main": "main.js",
     "scripts": {
         "dev": "make watch",
         "build": "make production"
     },
     "keywords": [],
-    "author": "Bill Mill",
+    "author": "Casper Lassenius",
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^16.11.6",
